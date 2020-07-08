@@ -1,0 +1,31 @@
+{
+  "name": "translation",
+  "version": "1.0.0",
+  "description": "Suggesting hieroglyph dictionary words in a sequence of hieroglyphs",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hieroglyphics-initiative/translation.git"
+  },
+  "private": true,
+  "scripts": {
+    "preinstall": "docker container prune --force --filter \"label=project=Hieroglyphics Initiative\" --filter \"label=service=Translation API\"",
+    "install": "docker build -t $npm_package_docker_tag .",
+    "postinstall": "docker run -ti --name $npm_package_docker_configVolumeName $npm_package_docker_tag gcloud auth login",
+    "docker": "docker run --rm -ti --volumes-from $npm_package_docker_configVolumeName -v `pwd`:/app -v `pwd`/src/test/coverage:/coverage -p 8084:8084 $npm_package_docker_tag",
+    "start": "yarn docker /app/scripts/run_app",
+    "test": "yarn docker /app/scripts/test_app",
+    "lint": "yarn docker /app/scripts/lint_python",
+    "deploy": "yarn docker /app/scripts/deploy_app $npm_package_googleCloud_project $npm_package_version",
+    "bump": "yarn version --no-git-tag-version"
+  },
+  "docker": {
+    "tag": "hieroglyphics-translation",
+    "configVolumeName": "hieroglyphics-translation-config"
+  },
+  "googleCloud": {
+    "project": "placeholder-gcloud-application-id"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}
