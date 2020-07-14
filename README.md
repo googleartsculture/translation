@@ -1,8 +1,8 @@
-# Translation
+# Fabricuis Workbench Translation API
 
-Suggesting hieroglyph dictionary words in a sequence of hieroglyphs.
+An API for suggesting translations from a sequence of [Gardiner codes](https://en.wikipedia.org/wiki/Gardiner%27s_sign_list).
 
-This API is required by the Google Arts and Culture Fabricius Workbench, code found at [googleartsculture/workbench](https://github.com/googleartsculture/workbench)
+This API is required by the Google Arts and Culture Fabricius Workbench, code found at [googleartsculture/workbench](https://github.com/googleartsculture/workbench). For more infomation go to the [Google Arts and Culture home page](https://experiments.withgoogle.com/fabricius) for the project.
 
 The translation uses data from: Berlin-Brandenburg Academy of Sciences and Humanities (Berlin, Germany) and Saxon Academy of Sciences and Humanities
 (Leipzig, Germany), research project  "Structure and Transformation in the Vocabulary of the Egyptian Language", CC BY-SA 4.0 Int.
