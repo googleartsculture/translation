@@ -7,6 +7,9 @@ This API is required by the Google Arts and Culture Fabricius Workbench, code fo
 The translation uses data from: Berlin-Brandenburg Academy of Sciences and Humanities (Berlin, Germany) and Saxon Academy of Sciences and Humanities
 (Leipzig, Germany), research project  "Structure and Transformation in the Vocabulary of the Egyptian Language", CC BY-SA 4.0 Int.
 
+<img src="Berlin-Brandenburgische_Akademie_der_Wissenschaften.png" alt="Logo"
+title="Berlin-Brandenburgische Akademie der Wissenschaften logo" width="200"  />
+
 ## Contributing
 
 Please read [CONTRIBUTING.md](./CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
