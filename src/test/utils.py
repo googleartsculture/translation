@@ -31,19 +31,6 @@ class TestbedTestCase(unittest.TestCase):
 
     def setUp(self):
 
-        # self.testbed = testbed.Testbed()
-        # self.testbed.activate()
-        # self.policy = datastore_stub_util.PseudoRandomHRConsistencyPolicy(probability=1)
-        # self.testbed.init_datastore_v3_stub(consistency_policy=self.policy)
-        # self.testbed.init_memcache_stub()
-        # self.testbed.init_user_stub()
-        # self.testbed.init_mail_stub()
-        # self.testbed.init_taskqueue_stub()
-        # self.testbed.init_blobstore_stub()
-        # self.testbed.init_app_identity_stub()
-        # self.taskqueue_stub = self.testbed.get_stub(testbed.TASKQUEUE_SERVICE_NAME)
-        # self.mail_stub = self.testbed.get_stub(testbed.MAIL_SERVICE_NAME)
-        # self.testbed.setup_env(app_id='test-app')
         unittest.TestCase.setUp(self)
 
     def tearDown(self):

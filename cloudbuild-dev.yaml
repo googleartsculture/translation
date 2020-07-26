@@ -1,0 +1,17 @@
+steps:
+- name: 'gcr.io/google-appengine/python'
+  id: test
+  entrypoint: /bin/bash
+  args:
+  - '-c'
+  - |
+    pip3 install -r src/requirements.txt && \
+    cd src && pytest
+- name: 'gcr.io/google-appengine/python'
+  id: lint
+  entrypoint: /bin/bash
+  args:
+  - '-c'
+  - |
+    pip3 install pylint && \
+    pylint src

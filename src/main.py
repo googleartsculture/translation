@@ -20,7 +20,7 @@ import logging
 from functools import wraps
 
 from flask import Flask, json, jsonify, request
-from werkzeug.exceptions import (BadRequest, Forbidden, HTTPException,
+from werkzeug.exceptions import (BadRequest, HTTPException,
                                 InternalServerError)
 
 from flask_cors import CORS
