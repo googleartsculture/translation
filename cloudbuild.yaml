@@ -29,6 +29,7 @@ steps:
     - deploy
     - ./src/app.yaml
     - --project=${_TARGET_PROJECT_}
+    - --version=$SHORT_SHA
   waitFor:
     - test
 
