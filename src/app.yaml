@@ -27,7 +27,7 @@
 # limitations under the License.
 
 service: translation-api
-runtime: python37
+runtime: python38
 
 entrypoint: gunicorn -b :$PORT --log-level INFO --reload main:app
 handlers:
