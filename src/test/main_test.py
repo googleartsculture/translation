@@ -87,3 +87,10 @@ class MainTests(TestbedTestCase):
 
             self.assertIn('transliteration', item)
             self.assertIsInstance(item.get('transliteration'), str)
+
+    def test_warmup_request_responds_200(self):
+        """
+        Asserts that a reuqest to /_ah/warmup is handled.
+        """
+        response = self.client.get('/_ah/warmup')
+        self.assertEqual('200 OK', response.status)

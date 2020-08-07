@@ -98,6 +98,9 @@ def require_json(params=None):
 app = Flask(__name__)
 CORS(app)
 
+@app.route('/_ah/warmup')
+def warmup():
+    return '', 200, {}
 
 @app.route('/translation', methods=['POST'])
 @require_json(['sequence'])
