@@ -386,7 +386,7 @@ class DictionaryTree:
             outfile.close()
         except Exception as e:
             message = str(e) + ' in method serialize'
-            raise DictionaryTreeException(message)
+            raise DictionaryTreeException(message) from e
 
     def deserialize(self, file_name):
         """
@@ -404,7 +404,7 @@ class DictionaryTree:
             json_data.close()
         except Exception as e:
             message = str(e) + ' in method deserialize'
-            raise DictionaryTreeException(message)
+            raise DictionaryTreeException(message) from e
 
     def __search_words(self, sequence, match='contains'):
         """
