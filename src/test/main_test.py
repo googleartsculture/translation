@@ -14,12 +14,15 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+# pylint: disable=super-with-arguments
+
 import json
 from test.utils import TestbedTestCase
 
 import main
 
 class MainTests(TestbedTestCase):
+
     def setUp(self):
         super(MainTests, self).setUp()
         self.app = main.app

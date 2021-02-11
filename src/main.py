@@ -137,4 +137,4 @@ def classification(payload):
 
     except Exception as e:
         logging.error(e)
-        raise InternalServerError('Something went wrong!')
+        raise InternalServerError('Something went wrong!') from e
