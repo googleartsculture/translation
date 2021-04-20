@@ -24,7 +24,7 @@ more-itertools==8.2.0
 oauthlib==3.1.0
 packaging==20.3
 pluggy==0.13.1
-py==1.8.1
+py==1.10.0
 pyasn1==0.4.8
 pyasn1-modules==0.2.8
 pylint==2.4.4
